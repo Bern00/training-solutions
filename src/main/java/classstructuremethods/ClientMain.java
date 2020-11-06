@@ -14,7 +14,7 @@ public class ClientMain {
         System.out.println(client.getYear());
         System.out.println(client.getAddress());
 
-        client.migrate("Van neki");
+        client.migrate("Van neki már");
         System.out.println(client.getAddress());
 
     }
