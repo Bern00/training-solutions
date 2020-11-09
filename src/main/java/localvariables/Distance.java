@@ -2,17 +2,17 @@ package localvariables;
 
 public class Distance {
 
-    private double distanceLnKm;
+    private double distanceInKm;
 
     private boolean exact;
 
     public Distance(double distanceLnKm, boolean exact) {
-        this.distanceLnKm = distanceLnKm;
+        this.distanceInKm = distanceLnKm;
         this.exact = exact;
     }
 
-    public double getDistanceLnKm() {
-        return distanceLnKm;
+    public double getDistanceInKm() {
+        return distanceInKm;
     }
 
     public boolean isExact() {
