@@ -1,4 +1,4 @@
-package introinheritance.employee;
+package stringconcat.employee;
 
 public class Employee {
 

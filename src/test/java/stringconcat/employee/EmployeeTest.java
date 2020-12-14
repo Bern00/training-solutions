@@ -1,6 +1,5 @@
-package introinheritance.employee;
+package stringconcat.employee;
 
-import junit.framework.TestCase;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.equalTo;
