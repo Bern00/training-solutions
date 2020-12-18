@@ -13,7 +13,7 @@ public class Employee {
                 || occupation.equals("")
                 || occupation.equals(null)
                 || payment%1000 != 0) {
-            throw new IllegalArgumentException("Not valid information");
+            throw new IllegalArgumentException("Not valid information.");
         }
 
         this.name = name;
