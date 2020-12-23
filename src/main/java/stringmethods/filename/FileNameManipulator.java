@@ -95,6 +95,6 @@ public class FileNameManipulator {
         System.out.println(fileNameManipulator.identifyFilesByExtension("txt", "valami.txt"));
         System.out.println(fileNameManipulator.compareFilesByName("kicsi", "Kicsi"));
         System.out.println(fileNameManipulator.changeExtensionToLowerCase("VALAMI.TXT"));
-        System.out.println(fileNameManipulator.replaceStringPart("valami", "lam", "lak"));
+        System.out.println(fileNameManipulator.replaceStringPart("valami.txt", "lam", "lak"));
     }
 }
