@@ -10,8 +10,8 @@ public class Library {
 
     public void loadFromFile() {
         try(Scanner scanner = new Scanner(Library.class.getResourceAsStream("/books.csv"))) {
-            scanner.useDelimiter("; | (\r\n) | \n");
-            while(scanner.hasNextLine()) {
+            scanner.useDelimiter(";|(\r\n)|\n");
+            while (scanner.hasNextLine()) {
                 String regNum = scanner.next();
                 String author = scanner.next();
                 String title = scanner.next();
@@ -25,8 +25,5 @@ public class Library {
         return books;
     }
 
-    public static void main(String[] args) {
-        Library library = new Library();
-        System.out.println(library.getBooks());
-    }
+
 }
