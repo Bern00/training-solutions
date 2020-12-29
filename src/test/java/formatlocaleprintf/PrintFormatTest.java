@@ -24,7 +24,7 @@ public class PrintFormatTest {
         Double d = 561123.20;
 
         //Then
-        assertEquals("Total is: 561 123,20 Ft", new PrintFormat().printFormattedText(d));
+        assertEquals("Total is: 561123,20 Ft", new PrintFormat().printFormattedText(d).replace("\u00a0",""));
     }
 
     @Test
