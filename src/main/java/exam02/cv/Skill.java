@@ -21,9 +21,6 @@ public class Skill {
         this.name = name;
     }
 
-    public void setLevel(int level) {
-        this.level = level;
-    }
 
     public int getLevel() {
         return level;
