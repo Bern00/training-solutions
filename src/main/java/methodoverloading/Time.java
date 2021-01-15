@@ -52,10 +52,10 @@ public class Time {
         return isEqual(time);
     }
     public boolean isEarlier(Time time) {
-        return timeInSecond() < time.timeInSecond();
+        return timeInSecond() > time.timeInSecond();
     }
     public boolean isEarlier(int hours, int minutes, int seconds) {
         Time time = new Time(hours, minutes, seconds);
-        return timeInSecond() == time.timeInSecond();
+        return isEarlier(time);
     }
 }

@@ -74,16 +74,16 @@ public class TimeTest {
         //Given
         Time time = new Time(13, 14, 15);
         //Then
-        assertTrue(time.isEarlier(15, 10, 10));
-        assertFalse(time.isEarlier(10, 10, 10));
+        assertTrue(time.isEarlier(10, 10, 10));
+        assertFalse(time.isEarlier(15, 10, 10));
     }
 
     @Test
     public void testIsEarlierWithTimeParameter() {
         //Given
         Time time = new Time(13, 14, 15);
-        Time laterTime = new Time(15, 14, 15);
-        Time earlierTime = new Time(10, 14, 15);
+        Time laterTime = new Time(10, 14, 15);
+        Time earlierTime = new Time(15, 14, 15);
         //Then
         assertTrue(time.isEarlier(laterTime));
         assertFalse(time.isEarlier(earlierTime));
