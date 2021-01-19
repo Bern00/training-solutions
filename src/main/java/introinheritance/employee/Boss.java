@@ -1,4 +1,6 @@
-package introinheritance;
+package introinheritance.employee;
+
+import introinheritance.employee.Employee;
 
 public class Boss extends Employee {
 
