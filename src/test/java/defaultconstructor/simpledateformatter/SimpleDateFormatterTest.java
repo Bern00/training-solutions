@@ -1,7 +1,7 @@
 package defaultconstructor.simpledateformatter;
 
 import defaultconstructor.simpledate.SimpleDate;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 
@@ -23,31 +23,21 @@ public class SimpleDateFormatterTest {
 
     @Test
     public void testFormatDateStringByCountryCodeHU() {
-        SimpleDate simpleDate = new SimpleDate();
-        simpleDate.setDate(2016, 2, 29);
         assertEquals("2016-2-29", new SimpleDateFormatter().formatDateStringByCountryCode(CountryCode.HU, simpleDate));
     }
 
     @Test
     public void testFormatDateStringByCountryCodeEN() {
-        SimpleDate simpleDate = new SimpleDate();
-        simpleDate.setDate(2016, 2, 29);
         assertEquals("29-2-2016", new SimpleDateFormatter().formatDateStringByCountryCode(CountryCode.EN, simpleDate));
     }
 
     @Test
     public void testFormatDateStringByCountryCodeUS() {
-
-        SimpleDate simpleDate = new SimpleDate();
-        simpleDate.setDate(2016, 2, 29);
         assertEquals("2-29-2016", new SimpleDateFormatter().formatDateStringByCountryCode(CountryCode.US, simpleDate));
     }
 
     @Test
     public void testFormatDateString() {
-
-        SimpleDate simpleDate = new SimpleDate();
-        simpleDate.setDate(2016, 2, 29);
         assertEquals("2016-2-29", new SimpleDateFormatter().formatDateString(simpleDate));
     }
 }
