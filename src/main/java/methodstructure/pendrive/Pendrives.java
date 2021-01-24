@@ -6,11 +6,14 @@ import java.util.List;
 public class Pendrives {
 
     public Pendrive best(List<Pendrive> pendrives) {
+
         Pendrive min = pendrives.get(0);
+
         for (int j = 0; j < pendrives.size(); j++) {
             if (min.comparePricePerCapacity(pendrives.get(j)) == 1) {
                 min = pendrives.get(j);
             }
+
         }
         return min;
     }
