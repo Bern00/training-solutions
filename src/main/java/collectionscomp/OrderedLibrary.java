@@ -25,18 +25,16 @@ public class OrderedLibrary {
         return libraryBooks;
     }
 
+
     public List<String> orderedByTitleLocale(Locale locale) {
 
-        List<String> orderedList = new ArrayList<>();
+        List<String> bookTitles = new ArrayList<>();
         for (Book book : libraryBooks) {
-            orderedList.add(book.getTitle());
+            bookTitles.add(book.getTitle());
         }
 
-        Collator hungarianCollator = Collator.getInstance(locale);
-        hungarianCollator.setStrength(Collator.PRIMARY);
-        Collections.sort(orderedList, hungarianCollator);
-
-        return orderedList;
+        Collections.sort(bookTitles, Collator.getInstance(locale));
+        return bookTitles;
     }
 
 }
