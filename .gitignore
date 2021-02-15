@@ -8,3 +8,4 @@ target
 .classpath
 .project
 *.class
+/src/main/java/dailyTasks/
